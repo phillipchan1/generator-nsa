@@ -1,0 +1,16 @@
+{
+  "author": "",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0"
+  },
+  "description": "",
+  "license": "ISC",
+  "main": "server/index.js",
+  "name":  "<%= appName %>",
+  "scripts": {
+    "start": "nodemon",
+    "test": "node test"
+  },
+  "version": "1.0.0"
+}
