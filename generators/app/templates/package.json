@@ -1,16 +1,22 @@
 {
-  "author": "",
-  "dependencies": {
-    "body-parser": "^1.15.2",
-    "express": "^4.14.0"
-  },
-  "description": "<%= appName %>",
-  "license": "ISC",
-  "main": "server/index.js",
-  "name":  "<%= appName %>",
-  "scripts": {
-    "start": "nodemon",
-    "test": "node test"
-  },
-  "version": "1.0.0"
+	"author": "",
+	"dependencies": {
+		"body-parser": "^1.15.2",
+		"express": "^4.14.0"
+	},
+	"devDependencies": {
+		"chai": "^3.5.0",
+		"gulp": "^3.9.1",
+		"gulp-mocha": "^3.0.1",
+		"mocha": "^3.2.0"
+	},
+	"description": "<%= appName %>",
+	"license": "ISC",
+	"main": "server/index.js",
+	"name":  "<%= appName %>",
+	"scripts": {
+		"start": "nodemon",
+		"test": "node test"
+	},
+	"version": "1.0.0"
 }
