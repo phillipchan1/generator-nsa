@@ -10,11 +10,20 @@ module.exports = Generator.extend({
       'Let\'s build a startup node app site with the ' + chalk.red('generator-sss') + ' generator!'
     ));
 
-    var prompts = [{
-      name: 'appName',
-      message: `What is your site's name?`,
-      default: this.appName
-    }];
+    var prompts = [
+      {
+        name: 'appName',
+        message: `What is your site's name?`,
+        default: this.appName,
+        required: true
+      },
+      {
+        name: 'appDescription',
+        message: `Give a description of your app`,
+        default: this.appDescription,
+        required: true
+      }
+    ];
 
     return this.prompt(prompts).then(function (props) {
       // To access props later use this.props.someAnswer;
@@ -27,7 +36,8 @@ module.exports = Generator.extend({
       this.templatePath(''),
       this.destinationPath(this.props.appName),
       {
-        appName: this.props.appName
+        appName: this.props.appName,
+        appDescription: this.props.appDescription
       }
     );
   },
