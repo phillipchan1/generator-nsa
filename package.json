@@ -1,6 +1,6 @@
 {
   "name": "generator-nsa",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "description": "Boilerplate for starting a node application",
   "homepage": "",
   "author": {
@@ -41,7 +41,7 @@
       "mocha": true
     }
   },
-  "repository": "https://github.com/phillipchan2/generator-sss.git",
+  "repository": "https://github.com/phillipchan2/generator-nsa.git",
   "scripts": {
     "prepublish": "gulp prepublish",
     "test": "gulp"

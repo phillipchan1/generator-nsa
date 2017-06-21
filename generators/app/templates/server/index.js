@@ -11,7 +11,7 @@ var app = express();
 app.use(parser.json());
 app.use(parser.urlencoded({ extended: false }));
 
-app.use('/', express.static('/client/'));
+app.use('/', express.static('client/'));
 
 // direct all other routes to client-side app
 app.all('/*', function ( req, res ) {
