@@ -15,7 +15,7 @@
 	"main": "server/index.js",
 	"name":  "<%= appName %>",
 	"scripts": {
-		"start": "nodemon",
+		"start": "node index.js",
 		"test": "node test"
 	},
 	"version": "1.0.1"
